@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- Custom Font  -->
+  <link href="https://fonts.googleapis.com/css?family=Merienda|Monoton|Permanent+Marker|Wallpoet&display=swap" rel="stylesheet">
  
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,13 +17,13 @@
    <!-- Custom CSS -->
    <link rel="stylesheet" href="assets/style.css">
 
-  <title>Document</title>
+  <title>res-app</title>
 </head>
 <body>
 
   <header>
 
-    <div class="logo">Yashua</div>
+    <div class="logo"> Code folio</div>
 
     <nav>
         <ul>
@@ -32,11 +35,25 @@
     </nav>
 
      <section>
-      <div class="social-icons">social icons</div>
+      <div class="social-icons">
+        <div class="social-buttons">
+            <a href="https://github.com/YashuaB"><i class="fab fa-github-square"></i></a>
+        </div>
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/yashua-ben-abraham-3838a4159/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!-- <div class="social-buttons"></div> -->
+        </div>
      </section>
 
       <section>
         <div class="intro">
+          <div class="intro-text"> 
+             <p>Hi there, I'm</p> 
+            <h1>Yashua Ben Abraham</h1> 
+            <h4>FullStack Web Developer</h4>
+          </div>
+        
           <img src="">
         </div>
     
@@ -46,7 +63,20 @@
     
   <section>
     <div class="about">
-      <h2>About</h2>
+      <!-- <h2>About</h2> -->
+      <h3 class="about-me">Web developer <br> Based in Charlotte,Nc  I build cool stuff</h3>
+      <img class="profile-image" src="assets/images/Snapchat-644307070.jpg">
+      <article class="about-details">
+         
+        <p> my name is Yashua Ben Abraham. I am originally from Brooklyn, NY. I moved to Charlotte about five
+            years ago. <br>
+            I enjoy nature, art, anime, working out, video games, and pizza! In my spare I find myself bewteen
+            reading and speading time with my younger sister. In the next year I plan on training for the
+            Spartan Race, which is a marathon/obstacle course. <br> In the next few years I am looking forward
+            to traveling. My top three domestic places I would like to visit are Miami, D.C., and Vegas.
+            The three international places are Dubai, Japan, and Brazil.</p>
+      </article>
+     
     </div>
   </section>
   
@@ -55,32 +85,55 @@
     </section>
 
 <section>
-  <div class="skills">
-    <div class="skill-details">
+  <div class="row skills">
+    <div class=" col-lg-3 skill-details">
       <h3>Languages</h3>
-      <p></p>
+      <ul>
+        <li>javaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
     </div>
-    <div class="skill-details">
+    <div class=" col-lg-3 skill-details">
       <h3>Framworks</h3>
-      <p></p>
+      <ul>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Bootstrap</li>
+        <li>jQuery</li>
+      </ul>
     </div>
-    <div class="skill-details">
+    <div class=" col-lg-3 skill-details">
       <h3>Database</h3>
-      <p></p>
-    </div>
-    <div class="skill-details">
-      <h3>Task & Project Management</h3>
-      <p></p>
-    </div>
-    <div  class="skill-details">
-      <h3>Tools</h3>
-      <p></p>
-    </div>
-    <div class="skill-details">
-    <h3>Other Skills</h3>
-    <p></p>
+      <ul>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+      </ul>
     </div>
   </div>
+    <div class="row">
+        <div class=" col-lg-3 skill-details">
+            <h3>Task & Project Management</h3>
+            <ul>
+              <li>Git</li>
+            </ul>
+          </div>
+          <div  class=" col-lg-3 skill-details">
+            <h3>Tools</h3>
+            <ul>
+              <li> MySQL Workbench</li>
+              <li> Mamp</li>
+              <li>Robo 3T</li>
+              <li>Postman</li>
+            </ul>
+          </div>
+          <div class=" col-lg-3 skill-details">
+          <h3>Other Skills</h3>
+          <p>Rest API’s</p>
+          </div>
+    </div>
+    
+  
   
 </section>
 
@@ -91,26 +144,117 @@
     </section>
 
   <div class="">
-      <div id="carouselExampleControls" class="carousel slide slider" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
+      <div id="carousel-example-multi" class="carousel slide slider carousel-multi-item v-2" data-ride="carousel">
+
+          <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
+                class="fas fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
+                class="fas fa-chevron-right"></i></a>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <!--/.Controls-->
+        
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-multi" data-slide-to="1"></li>
+            <li data-target="#carousel-example-multi" data-slide-to="2"></li>
+            <li data-target="#carousel-example-multi" data-slide-to="3"></li>
+            <li data-target="#carousel-example-multi" data-slide-to="4"></li>
+            <li data-target="#carousel-example-multi" data-slide-to="5"></li>
+          </ol>
+          <!--/.Indicators-->
+        
+          <div class="carousel-inner v-2" role="listbox">
+        
+            <div class="carousel-item active">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="assets/images/beerbudimg.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 ">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="assets/images/beerbudimg.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="assets/images/beerbudimg.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        
         </div>
      
 
@@ -163,12 +307,23 @@
 </section>
     
       
-    <!--  JavaScript -->
-    <script src="assets/javaScript.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+<!--  JavaScript -->
+<script src="assets/javaScript.js"></script>
 </body>
 </html>
