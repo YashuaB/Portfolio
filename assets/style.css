@@ -1,10 +1,13 @@
 body{
   background-image: radial-gradient(rgb(171, 191, 194) , rgb(62, 62, 75) , black );
- 
+  overflow-x: hidden;
 }
 /* 'Permanent Marker', cursive,'Wallpoet', cursive, */
+.logo,nav,.title-text,.skill,.about-me{
+  font-family: 'Monoton', cursive;
+}
 .logo{
-  font-family:   'Monoton', cursive ;
+ 
   font-weight:50;
   position: relative;
   position: fixed;
@@ -34,9 +37,8 @@ body{
   font-size: 40px;
   /* background-color: black; */
   color: white;
- 
-  
 }
+
 .intro-text{
   /* position: relative; */
   /* width:100%; */
@@ -46,13 +48,13 @@ body{
   position: relative;
   top:180px;
   left: 35%;
-  font-family: 'Merienda', cursive;
+ font-family: 'Supermercado One', cursive;
+ /* font-family: 'Merienda', cursive; */
  
 }
 
 
 nav {
-  font-family:   'Monoton', cursive ;
   font-weight: 50;
   position: absolute;
   position: fixed;
@@ -98,10 +100,9 @@ li a:hover {
 }
 
 .about-me{
-font-family:'Monoton', cursive ;
 font-weight: 50;
 font-size: 24px;
-width: 390px;
+width: 330px;
 position: relative;
 top: 120px;
 left: 520px;
@@ -122,17 +123,20 @@ left: 520px;
   left: 120px;
 }
 .title-text{
-  font-family:   'Monoton', cursive ;
   font-weight: 50;
   color:white;
   margin-left: 46%;
   margin-top:160px;
   font-size: 40px;
 }
-
+.contact{
+ position:relative;
+ right: 50px;
+}
 .skills-container{
   position: relative;
-  left:161px; 
+  left: 250px;
+  width: 80%;
 }
 
 .skill{
@@ -140,7 +144,6 @@ left: 520px;
   /* width: 50%; */
   margin-top:100px;
   margin-left: 260px;
-  font-family:   'Monoton', cursive ;
   font-weight: 50;
 }
 
@@ -151,6 +154,9 @@ left: 520px;
   /* float: left; */
   height: 200px;
   margin: 6px;
+}
+.skill-details h3{
+  margin-top: 30px;
 }
 
 .slider{
@@ -163,6 +169,7 @@ left: 520px;
   position: relative;
   left: 28%;
   width:50%;
+  height: 480px;
   border: white 1px solid;
   margin-top:65px ;
 }
