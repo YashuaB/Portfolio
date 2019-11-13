@@ -27,10 +27,10 @@
 
     <nav>
         <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li class="nav-list"><a href="#home">Home</a></li>
+        <li class="nav-list"><a href="#news">Resume</a></li>
+        <li class="nav-list"><a href="#contact">Contact</a></li>
+        <li class="nav-list"><a href="#about">About</a></li>
         </ul>
     </nav>
 
@@ -85,53 +85,56 @@
     </section>
 
 <section>
-  <div class="row skills">
-    <div class=" col-lg-3 skill-details">
-      <h3>Languages</h3>
-      <ul>
-        <li>javaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    </div>
-    <div class=" col-lg-3 skill-details">
-      <h3>Framworks</h3>
-      <ul>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Bootstrap</li>
-        <li>jQuery</li>
-      </ul>
-    </div>
-    <div class=" col-lg-3 skill-details">
-      <h3>Database</h3>
-      <ul>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-      </ul>
-    </div>
-  </div>
-    <div class="row">
-        <div class=" col-lg-3 skill-details">
-            <h3>Task & Project Management</h3>
+  <div class="skills-container">
+      <div class="row skills">
+          <div class=" col-lg-3 skill-details">
+            <h3>Languages</h3>
             <ul>
-              <li>Git</li>
-            </ul>
-          </div>
-          <div  class=" col-lg-3 skill-details">
-            <h3>Tools</h3>
-            <ul>
-              <li> MySQL Workbench</li>
-              <li> Mamp</li>
-              <li>Robo 3T</li>
-              <li>Postman</li>
+              <li>javaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
             </ul>
           </div>
           <div class=" col-lg-3 skill-details">
-          <h3>Other Skills</h3>
-          <p>Rest API’s</p>
+            <h3>Framworks</h3>
+            <ul>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Bootstrap</li>
+              <li>jQuery</li>
+            </ul>
           </div>
-    </div>
+          <div class=" col-lg-3 skill-details">
+            <h3>Database</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+          <div class="row">
+              <div class=" col-lg-3 skill-details">
+                  <h3>Task & Project Management</h3>
+                  <ul>
+                    <li>Git</li>
+                  </ul>
+                </div>
+                <div  class=" col-lg-3 skill-details">
+                  <h3>Tools</h3>
+                  <ul>
+                    <li>MySQL Workbench</li>
+                    <li>Mamp</li>
+                    <li>Robo 3T</li>
+                    <li>Postman</li>
+                  </ul>
+                </div>
+                <div class=" col-lg-3 skill-details">
+                <h3>Other Skills</h3>
+                <p>Rest API’s</p>
+                </div>
+          </div>
+  </div>
+  
     
   
   
@@ -139,135 +142,24 @@
 
 <section>
   
-    <section>
+    <!-- <section>
         <div class="title-text">Projects</div>
-    </section>
+    </section> -->
 
-  <div class="">
-      <div id="carousel-example-multi" class="carousel slide slider carousel-multi-item v-2" data-ride="carousel">
-
-          <!--Controls-->
-          <div class="controls-top">
-            <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
-                class="fas fa-chevron-left"></i></a>
-            <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
-                class="fas fa-chevron-right"></i></a>
-          </div>
-          <!--/.Controls-->
-        
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-multi" data-slide-to="1"></li>
-            <li data-target="#carousel-example-multi" data-slide-to="2"></li>
-            <li data-target="#carousel-example-multi" data-slide-to="3"></li>
-            <li data-target="#carousel-example-multi" data-slide-to="4"></li>
-            <li data-target="#carousel-example-multi" data-slide-to="5"></li>
-          </ol>
-          <!--/.Indicators-->
-        
-          <div class="carousel-inner v-2" role="listbox">
-        
-            <div class="carousel-item active">
-              <div class="col-12 col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="assets/images/beerbudimg.jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title font-weight-bold">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 ">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title font-weight-bold">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="assets/images/beerbudimg.jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title font-weight-bold">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="assets/images/beerbudimg.jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title font-weight-bold">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title font-weight-bold">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title font-weight-bold">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
-          </div>
-        
-        </div>
-     
-
-      </div>
+  
     
 </section>
 
 
 <section>
     <container>
-     
+        <section>
+            <div class="title-text">Contact Me</div>
+            <h5>Need to reach out me go ahead send me a message</h5>
+        </section>
      
         <form class="contact-form">
+            
             <div class="form-group">
               <label for="exampleFormControlInput1">Email address</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -287,19 +179,21 @@
               <div class="form-info"> 
                 <div>
                   <h4>address</h4>
-                    <p></p>
+                    <p>5004 Endolwood rd</p>
+                    <p>Charlotte,Nc 28215</p>
                 </div>
                 <div>
                     <h4>Phone</h4>
-                    <p></p>
+                    <p>980-867-2454</p>
                 </div>
                 <div>
                     <h4>Email</h4>
-                    <p></p>
+                    <p>yashuab.abraham@gmail.com</p>
                 </div>
                
               </div>
             </div>
+            <button type="button" class="btn btn-secondary">Secondary</button>
           </form>
 
     </container>
