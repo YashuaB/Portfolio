@@ -166,11 +166,21 @@ left: 520px;
   height: 500px;
 }
 
+.carousel-background{
+  width: 1080px;
+  background-color: #3330368c;
+  position: relative;
+  left: 141px;
+  padding-top: 40px;
+  padding-left: 227px;
+  padding-bottom: 90px;
+}
+
 .carousel-container{
   width:600px;
 }
 
-.carousel-inner:hover .test{
+.carousel-inner:hover .test button{ 
   opacity: 1;
   display: block;
   
@@ -182,8 +192,9 @@ left: 520px;
   opacity: 0;
   width:600px;
   height: 450;
-  
- 
+  position: absolute;
+  top: 200px;
+  left: 245px;
 }
 .contact-form{
   position: relative;
