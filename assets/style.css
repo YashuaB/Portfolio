@@ -9,6 +9,8 @@ body{
   margin-right: auto;
   margin-left: auto;
   max-width: 960px;
+  font-family: 'Supermercado One', cursive;
+  color:white;
 }
 .logo,nav,.title-text,.skill,.about-me{
   font-family: 'Monoton', cursive;
@@ -55,7 +57,7 @@ body{
   position: relative;
   top:180px;
   /* left: 35%; */
- font-family: 'Supermercado One', cursive;
+ 
  text-align: center;
  /* font-family: 'Merienda', cursive; */
  
@@ -65,8 +67,9 @@ body{
 nav {
   font-weight: 50;
   /* position: absolute; */
+  width: 800px;
   position: fixed;
-    left: 61%;
+    left: 45%;
     top: 18px;
     z-index: 10;
 }
@@ -254,4 +257,9 @@ left: 520px;
 }
 .form-group:nth-child(1){
 margin-top:70px;
+}
+
+.custom-btn{
+  background-color:transparent;
+  color:rgb(232, 232, 241);
 }
