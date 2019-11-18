@@ -1,8 +1,15 @@
 body{
   background-image: radial-gradient(rgb(171, 191, 194) , rgb(62, 62, 75) , black );
   overflow-x: hidden;
+  
 }
 /* 'Permanent Marker', cursive,'Wallpoet', cursive, */
+
+.content-wrapper{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
 .logo,nav,.title-text,.skill,.about-me{
   font-family: 'Monoton', cursive;
 }
@@ -47,8 +54,9 @@ body{
   color:white;
   position: relative;
   top:180px;
-  left: 35%;
+  /* left: 35%; */
  font-family: 'Supermercado One', cursive;
+ text-align: center;
  /* font-family: 'Merienda', cursive; */
  
 }
@@ -56,9 +64,9 @@ body{
 
 nav {
   font-weight: 50;
-  position: absolute;
+  /* position: absolute; */
   position: fixed;
-    left: 67%;
+    left: 61%;
     top: 18px;
     z-index: 10;
 }
@@ -90,12 +98,19 @@ li a:hover {
 }
 
 .about{
-  color:white;
+  /* color:white;
  background-color: rgba(41, 35, 35, 0.548);
   width: 80%;
   height: 640px;
   margin-left: 130px;
-  margin-top:50px;
+  margin-top:50px; */
+
+  color: white;
+    background-color: rgba(41, 35, 35, 0.548);
+    /* width: 100%; */
+    height: 640px;
+    /* margin-left: 130px; */
+    margin-top: 50px;
 
 }
 
@@ -125,18 +140,18 @@ left: 520px;
 .title-text{
   font-weight: 50;
   color:white;
-  margin-left: 46%;
+  /* margin-left: 46%; */
   margin-top:160px;
   font-size: 40px;
+  text-align: center;
 }
-.contact{
- position:relative;
- right: 50px;
-}
+
 .skills-container{
-  position: relative;
+  /* position: relative;
   left: 250px;
-  width: 80%;
+  width: 80%; */
+  position: relative;
+    left: 100px;
 }
 
 .skill{
@@ -167,20 +182,26 @@ left: 520px;
 }
 
 .carousel-background{
-  width: 1080px;
+  /* width: 1080px;
   background-color: #3330368c;
   position: relative;
   left: 141px;
   padding-top: 40px;
   padding-left: 227px;
-  padding-bottom: 90px;
+  padding-bottom: 90px; */
+
+  
+    background-color: #3330368c;
+    padding-top: 40px;
+    padding-left: 178px;
+    padding-bottom: 90px;
 }
 
 .carousel-container{
   width:600px;
 }
 
-.carousel-inner:hover .test button{ 
+.carousel-inner:hover .test { 
   opacity: 1;
   display: block;
   
@@ -196,18 +217,31 @@ left: 520px;
   top: 200px;
   left: 245px;
 }
+
+.contact{
+  position:relative;
+  /* right: 56px; */
+ top: 36px;
+ }
 .contact-form{
-  position: relative;
+  /* position: relative;
   left: 28%;
   width:50%;
   height: 480px;
   border: white 1px solid;
-  margin-top:65px ;
+  margin-top:65px ; */
+  position: relative;
+    width: 76%;
+    height: 480px;
+    border: white 1px solid;
+    margin-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-info{
   position: relative;
-  left: 360px;
+  left: 425px;
   bottom: 290px;
   color: white;
   
