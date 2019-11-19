@@ -18,7 +18,7 @@ body{
 .logo{
  
   font-weight:50;
-  position: relative;
+  /* position: relative; */
   position: fixed;
   display: inline-block;
   top:10px;
@@ -26,6 +26,7 @@ body{
   color: white;
   z-index: 100;
   font-size: 36px;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
 
 .social-icons{
@@ -47,7 +48,12 @@ body{
   /* background-color: black; */
   color: white;
 }
-
+.fa-linkedin:hover{
+  color: #007bff8c;
+}
+.fa-github-square:hover{
+  color:red;
+}
 .intro-text{
   /* position: relative; */
   /* width:100%; */
@@ -95,9 +101,16 @@ li a {
   color:white;
 }
 
-li a:hover {
+/* li a:hover {
   color:white;
  
+} */
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); 
+  color: #02fff2;
+  
+  text-shadow: 0 0 15px #0062d3;
 }
 
 .about{
@@ -118,6 +131,8 @@ li a:hover {
 }
 
 .about-me{
+text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+color:#02fff2;
 font-weight: 50;
 font-size: 24px;
 width: 330px;
@@ -127,18 +142,29 @@ left: 520px;
 }
 
 .about-details{
+  /* line-height: 20px;
   margin-left: 520px;
   position: relative;
-  bottom: 190px;
-  width: 40%;
+  bottom: 207px;
+  width: 40%; */
+
+
+  margin-left: 520px;
+    position: relative;
+    bottom: 255px;
+    line-height: 20px;
+    width: 40%;
+    border-top:#b9a8a8 solid 1px;
+    padding-top: 37px;
 }
 
 .profile-image{
   width: 290px;
   height: 390px;
   position: relative;
-  top: 80px;
+  top: 45px;
   left: 120px;
+  border:solid 5px hsla(0, 95%, 35%, 1);
 }
 .title-text{
   font-weight: 50;
@@ -147,6 +173,10 @@ left: 520px;
   margin-top:160px;
   font-size: 40px;
   text-align: center;
+  text-shadow: 0px 3px 0px #b2a98f,
+  0px 14px 10px rgba(0,0,0,0.15),
+  0px 24px 2px rgba(0,0,0,0.1),
+  0px 34px 30px rgba(0,0,0,0.1);
 }
 
 .skills-container{
@@ -226,6 +256,10 @@ left: 520px;
   /* right: 56px; */
  top: 36px;
  }
+ .subtext{
+   font-family:'Supermercado One', cursive;
+   text-shadow: none;
+ }
 .contact-form{
   /* position: relative;
   left: 28%;
@@ -259,7 +293,29 @@ left: 520px;
 margin-top:70px;
 }
 
+.btn{
+ width:300px
+}
+.custom-btn:hover{
+  background-color: black;
+  /* color:green; */
+  outline: 0;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
 .custom-btn{
   background-color:transparent;
   color:rgb(232, 232, 241);
+  margin: .375rem;
+    /* color: inherit; */
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: normal;
+    cursor: pointer;
+    border: 0;
+    border-radius: .125rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
 }
+
