@@ -74,12 +74,11 @@ body{
 
 nav {
   font-weight: 50;
- 
   width: 800px;
-  position: fixed;
-  left: 30.8%;
-  bottom: 540px;
-    z-index: 10;
+  position: relative;
+  left: 31.8%;
+  bottom: 515px;
+  z-index: 10;
 }
 
 ul {
@@ -106,26 +105,37 @@ li a {
 .menu-btn{
  
   border: 1px solid;
-  border-radius: 40%;
+  /* border-radius: 40%; */
   color: white;
-  padding: 20px;
+  padding: 11px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  /* margin: 4px 2px; */
   cursor: pointer;
+}
+#about-button{
+border-radius: 40px 0px 0px 40px;
+padding-right: 23px;
+}
+#work-button{
+
+}
+#contact-button{
+  border-radius: 0px 40px 40px 0px;
 }
 
 .diamond-shp{
   border: 1px solid;
   border-color: white;
-  height: 500px;
+  height: 470px;
+  width:467px;
   text-align: center;
   transform:rotate(45deg);
-  width:500px;
   position: relative;
   left:230px;
+  top:49px;
 }
 
 .grow { transition: all .2s ease-in-out; }
