@@ -1,7 +1,7 @@
 body{
-  background-image: radial-gradient(rgb(171, 191, 194) , rgb(62, 62, 75) , black );
+  /* background-image: radial-gradient(rgb(171, 191, 194) , rgb(62, 62, 75) , black ); */
   overflow-x: hidden;
-  
+  overflow-y: hidden;
 }
 /* 'Permanent Marker', cursive,'Wallpoet', cursive, */
 
@@ -9,27 +9,38 @@ body{
   margin-right: auto;
   margin-left: auto;
   max-width: 960px;
+  /* max-height: 300px; */
   font-family: 'Supermercado One', cursive;
-  color:white;
+  /* color:white; */
 }
+
+.nav-intro-container{
+  height: 726px;
+  position: absolute;
+  /* bottom: -103px; */
+  top: 91px;
+}
+
+.intro{
+  height: 0px;
+}
+
 .intro-img-container {
-  height: 624px;
-    width: 120%;
-    background-color: rgba(128, 128, 128, 0.644);
+  height: 707px;
+  width: 100%;
+    /* background-color: rgba(128, 128, 128, 0.644); */
 }
 .background-img{
-  position: absolute;
-  
-  right: 200px;
-  opacity: .5;
+  /* position: absolute;
+  right: 200px; */
+  opacity: .8;
 }
 .logo,nav,.title-text,.skill,.about-me{
   font-family: 'Monoton', cursive;
 }
+
 .logo{
- 
   font-weight:50;
-  
   position: fixed;
   display: inline-block;
   top:10px;
@@ -41,7 +52,6 @@ body{
 }
 
 .social-icons{
-  
   display: inline-block;
   width:45px;
   height: 124px;
@@ -68,16 +78,17 @@ body{
   color:white;
   position: relative;
   bottom: 297px;
+  left: 67px;
   text-align: center;
 }
 
 
 nav {
-  font-weight: 50;
+  font-weight: 200;
   width: 800px;
   position: relative;
-  left: 31.8%;
-  bottom: 515px;
+  left: 38.8%;
+  bottom: 110px;
   z-index: 10;
 }
 
@@ -139,24 +150,24 @@ padding-right: 23px;
 }
 
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); 
+
+.grow:hover { 
+  transform: scale(1.1); 
   color: #02fff2;
-  
   text-shadow: 0 0 15px #0062d3;
 }
 
 .about{
   display: none;
-  
-
   color: white;
-    background-color: rgba(41, 35, 35, 0.548);
-   
-    height: 640px;
-   
-    margin-top: 50px;
-
+  background-color: rgba(41, 35, 35, 0.548);
+  height: 505px;
+  margin-top: 50px;
+  position: relative;
+  bottom: 562px;
 }
+
+
 
 .about-me{
 text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
@@ -165,17 +176,14 @@ font-weight: 50;
 font-size: 24px;
 width: 330px;
 position: relative;
-top: 120px;
+top: 18px;
 left: 520px;
 }
 
 .about-details{
-  
-
-
-  margin-left: 520px;
+    margin-left: 520px;
     position: relative;
-    bottom: 255px;
+    bottom: 335px;
     line-height: 20px;
     width: 40%;
     border-top:#b9a8a8 solid 1px;
@@ -186,7 +194,7 @@ left: 520px;
   width: 290px;
   height: 390px;
   position: relative;
-  top: 45px;
+  bottom: 73px;
   left: 120px;
   border:solid 15px hsla(252, 13%, 70%, 0.57);;
   box-shadow: 1px 28px 16px 0px rgba(0,0,0,0.75);
@@ -217,19 +225,19 @@ left: 520px;
 
 .carousel-background{
   display: none;
-
-  
-    background-color: #3330368c;
-    padding-top: 40px;
-    padding-left: 178px;
-    padding-bottom: 90px;
+  background-color: #3330368c;
+  padding-top: 40px;
+  padding-left: 178px;
+  padding-bottom: 90px;
+  position: relative; 
+  bottom: 570px;
 }
 
 .carousel-container{
   width:600px;
 }
 
-.carousel-inner:hover .carousel-button { 
+.carousel-inner:hover .carousel-button, .carousel-inner:hover .carousel-caption { 
   opacity: 1;
   display: block;
   
@@ -238,9 +246,15 @@ left: 520px;
   opacity: .3;
 }
 
-.carousel-inner:hover .carousel-caption {
-  opacity: .3;
+.carousel-caption { 
+  position: relative;
+  bottom: 208px;
+  opacity: .0; 
 }
+
+/* .carousel-inner:hover .carousel-caption {
+  opacity: .3;
+} */
 .carousel-button{
   opacity: 0;
   width:600px;
@@ -253,6 +267,8 @@ left: 520px;
   margin-right:50px;
 }
 .contact-container{
+  position: relative;
+  bottom: 686px;
   display: none;
 }
 .contact{
@@ -286,6 +302,7 @@ left: 520px;
   width:46%;
  
   margin-left: 40px;
+  color: white;
 
 }
 .form-group:nth-child(1){
@@ -317,4 +334,28 @@ margin-top:70px;
     padding: .84rem 2.14rem;
     font-size: .81rem;
 }
+.close-icon{
+  color: white;
+  font-size: 26px;
+  width: 40px;
+  font-family: 'Courier New', Courier, monospace;
+}
 
+.position-a{
+  position: relative;
+  left: 920px;
+}
+.position-c{
+  z-index: 1000;
+  position: relative;
+  top: 85px;
+  left: 827px;
+}
+.position-p{
+  position: relative;
+  left: 750px;
+  bottom: 36px;
+}
+.footer-info{
+  text-align: center;
+}

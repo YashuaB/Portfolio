@@ -21,16 +21,17 @@
 </head>
 
 <body>
+    <div class="background-img">
+        <img class="intro-img-container" src="assets/images/mountain-stock-img.jpg">
+      </div>
 
     <div class="content-wrapper">
-
+      
   <header>
 
     <div class="logo"> YBA</div>
 
-    <div class="background-img">
-      <img class="intro-img-container" src="assets/images/mountain-stock-img.jpg">
-    </div>
+  </header>
    
 
      <section>
@@ -45,7 +46,7 @@
         </div>
      </section>
 
-      <section>
+      <section class="nav-intro-container">
         <div class="diamond-shp"></div>
         <div class="intro">
           
@@ -67,11 +68,14 @@
        
       </section>
 
-  </header>
+ 
     
   <section>
-    <div class="about">
-      <!-- <h2>About</h2> -->
+     
+    <div class="about closed">
+
+        <div class="close-icon position-a">X</div>
+    
       <h3 class="about-me">Web developer <br> Based in Charlotte,Nc  I build cool stuff</h3>
       <img class="profile-image" src="assets/images/Snapchat-644307070.jpg">
       <article class="about-details">
@@ -92,8 +96,10 @@
 
   
 
-<section class="carousel-background">
-  
+<section class="carousel-background closed">
+
+  <div class="close-icon position-p">X</div>
+
     <container>
     <div class="bd-example carousel-container">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -106,7 +112,7 @@
 
             <div class="carousel-item active">
               
-              <img src="assets/images/crystal.jpg" class="project-img d-block w-100" alt="...">
+              <img src="assets/images/blue-pattern-wallpaper.jpg" class="project-img d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -130,7 +136,7 @@
             </div>
             <div class="carousel-item">
                 
-              <img src="assets/images/crystal.jpg" class=" project-img d-block w-100" alt="...">
+              <img src="assets/images/blue-pattern-wallpaper.jpg" class=" project-img d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -156,8 +162,9 @@
 </section>
 
 
-<section>
-    <container class="contact-container">
+<section  class="contact-container closed"> 
+    <container>
+        <div class="close-icon position-c">X</div>
         <section>
             <div class="title-text contact"><p>Contact Me</p>
               <h5 class="subtext">Need to reach me? Go ahead send me a message</h5>
@@ -165,7 +172,7 @@
            
         </section>
      
-        <form class="contact-form">
+        <form class="contact-form ">
             
             <div class="form-group">
               <label for="exampleFormControlInput1">Name</label>
