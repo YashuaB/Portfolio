@@ -319,6 +319,7 @@ margin-top:70px;
 .btn{
  width:300px
 }
+
 .custom-btn:hover{
   background-color: black;
   /* color:green; */
@@ -367,7 +368,59 @@ margin-top:70px;
   text-align: center;
 }
 
+.img-responsive{
+  width: 200px;
+  height: 150px;
 
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.gallery_product{
+
+}
+
+
+
+.img-banner {
+  position: absolute;
+  top:91px;
+  bottom:0;
+  /* left: 0;
+  right: 0; */
+  background-color: black;
+  overflow: hidden;
+  width:200px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.banner-text{
+  text-align: left;
+  position: relative;
+    left: 134px;
+    text-decoration: underline;
+}
+
+.banner-text2{
+  position: relative;
+    left: 20px;
+    bottom: 23px;
+    text-decoration: underline;
+}
+
+.gallery_product:hover .img-responsive {
+  /* opacity: 0.7; */
+  
+}
+
+.gallery_product:hover .img-banner{
+  height: 40%;
+  opacity: .7;
+  /* height: 20%; */
+  color: white;
+}
 
 .gallery-container{
   position: relative;
@@ -382,11 +435,11 @@ margin-top:70px;
 .gallery-title
 {
     font-size: 36px;
-    
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
 }
+
 .gallery-title:after {
     content: "";
     position: absolute;
@@ -395,26 +448,23 @@ margin-top:70px;
     height: 45px;
     border-bottom: 1px solid #5e5e5e;
 }
+
 .gallery-btn-container{
   position: relative;
   left: 185px;
 }
 .gallery-btn{
- 
-    padding: .40rem 2.14rem;
-    
+ padding: .40rem 2.14rem;
 }
 
 .gallery-btn:nth-child(4){
-  margin-right: 200px;
+  margin-right: 309px;
 }
 .filter-button
 {
     font-size: 13px;
-   
     border-radius: 5px;
     text-align: center;
-    
     margin-bottom: 30px;
     padding: 2px 16px;
 
@@ -422,21 +472,17 @@ margin-top:70px;
 .filter-button:hover
 {
     font-size: 13px;
-   
     border-radius: 5px;
     text-align: center;
     color: #ffffff;
-   
-
 }
 
 
-.port-image
-{
+.port-image{
     width: 100%;
 }
 
-.gallery_product
-{   margin-right:140px;
-    margin-bottom: 30px;
+.gallery_product{  
+   margin-right:140px;
+   margin-bottom: 30px;
 }
