@@ -385,7 +385,7 @@ margin-top:70px;
 
 .img-banner {
   position: absolute;
-  top:91px;
+  top:90px;
   bottom:0;
   /* left: 0;
   right: 0; */
@@ -394,6 +394,9 @@ margin-top:70px;
   width:200px;
   height: 0;
   transition: .5s ease;
+}
+.banner-text-wrk{
+
 }
 
 .banner-text{
@@ -408,6 +411,10 @@ margin-top:70px;
     left: 20px;
     bottom: 23px;
     text-decoration: underline;
+}
+
+.banner-strike{
+  text-decoration-line: line-through;
 }
 
 .gallery_product:hover .img-responsive {
