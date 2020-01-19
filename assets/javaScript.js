@@ -27,3 +27,22 @@ $(".close-icon").click( function(){
   $(".social-icons").fadeIn(3000)
   $(".closed").fadeOut(2000)
 })
+
+
+$(".filter-button").click( function(){
+
+  var value = $(this).attr('data-filter')
+
+  if(value == "all"){
+       $('.filter').show('1000')
+  }else
+  { $(".filter").not('.'+value).hide('1000')
+    $('.filter').filter('.'+value).show('1000')
+      
+  }
+})
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active")
+}
+$(this).addClass("active")
