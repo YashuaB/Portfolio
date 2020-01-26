@@ -386,10 +386,16 @@ div .gallery_product{
 }
 
 .project-detail-container{
-  color: darkblue;
-  width: 200px;
-  position: relative;
-  bottom: 100px;
+    color: #e9ecef;
+    width: 200px;
+    height: 54px;
+    position: relative;
+    display: block;
+    /* bottom: -1px; */
+    background-color: #2121216e;
+    /* padding-bottom: 27px; */
+    margin-bottom: 13px;
+  /* bottom: 100px; */
 }
 .project-title{
   font-size:14px;
@@ -446,7 +452,8 @@ div .gallery_product{
 
 .gallery-container{
   position: relative;
-  bottom:67px;
+  /* bottom:67px; */
+    bottom:113px;
 }
 
 .gallery-inner-container{
