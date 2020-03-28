@@ -17,6 +17,9 @@
    <!-- Custom CSS -->
    <link rel="stylesheet" href="assets/style.css">
 
+   <!-- Animatin CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
   <title>res-app</title>
 </head>
 
@@ -271,21 +274,21 @@
            
         </section>
      
-        <form class="contact-form ">
-            
+        <form class="contact-form" method="post" name="contact_form" action="contact-form-handler.php">
+            <?php include('emailSubmit.php') ?>
             <div class="form-group">
               <label for="exampleFormControlInput1">Name</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+              <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
             </div>
             
             <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               </div>
 
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Your Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             
 
@@ -313,7 +316,9 @@
   <div class="footer-info">Copyright 2019</div>
 </footer>
     
-    </div>    
+    </div> 
+    
+    
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">

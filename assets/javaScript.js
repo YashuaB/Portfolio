@@ -19,8 +19,10 @@ $("li").click( function(){
 }
 })
 
+var timerDelay = false
+
 $(".close-icon").click( function(){
-    
+    timerDelay = true
   // $(".closed").css({"display":"none"})
   $(".nav-intro-container").fadeIn(3000)
   $(".logo").fadeIn(3000)
@@ -30,7 +32,7 @@ $(".close-icon").click( function(){
 
 
 $(".filter-button").click( function(){
-
+  
   var value = $(this).attr('data-filter')
 
   if(value == "all"){
@@ -46,3 +48,30 @@ if ($(".filter-button").removeClass("active")) {
 $(this).removeClass("active")
 }
 $(this).addClass("active")
+
+//////////////////////////////////////Form Validator//////////
+// var frmvalidator = new Validator("contactform")
+// frmvalidator.addValidation("name","req","Please provide your name")
+// frmvalidator.addValidation("email","req","Please provide your email")
+// frmvalidator.addValidation("email","email", "Please enter a valid email address")
+
+
+//////////////////////////////////////Animation////////////////
+function classTimer(text){
+  $(text).css("display", "block")
+  $(text).addClass("animated bounceInLeft")
+}
+
+if (!timerDelay){ 
+  console.log(timerDelay)
+  setTimeout(classTimer(".intro-text"),500)
+} else {
+  console.log(timerDelay)
+  setTimeout(classTimer(".intro-text"),4000)
+}
+
+setTimeout(classTimer("nav"),500)
+ 
+
+
+

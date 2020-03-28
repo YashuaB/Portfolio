@@ -74,6 +74,7 @@ body{
   color:red;
 }
 .intro-text{
+  display: none;
   height: 400px;
   color:white;
   position: relative;
@@ -84,6 +85,7 @@ body{
 
 
 nav {
+  display: none;
   font-weight: 200;
   width: 800px;
   position: relative;
