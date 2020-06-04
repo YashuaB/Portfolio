@@ -410,7 +410,7 @@ div .gallery_product{
 
 .img-banner {
   position: absolute;
-  top:90px;
+  top:0px;
   bottom:0;
   /* left: 0;
   right: 0; */
@@ -448,7 +448,7 @@ div .gallery_product{
 }
 
 .gallery_product:hover .img-banner{
-  height: 60px;
+  height: 150px;
   opacity: .7;
   /* height: 20%; */
   color: white;
